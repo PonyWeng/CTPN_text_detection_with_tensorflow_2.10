@@ -1,0 +1,11 @@
+
+## 預測
+python ctpn_predict.py --image_path C:\Users\ctlab\Desktop\CTPN_TF210\text_detection_ctpn\images\4.png --output_file_path C:\Users\ctlab\Desktop\CTPN_TF210\text_detection_ctpn\images\output.png --weights_file_path C:\Users\ctlab\Desktop\CTPN_TF210\text_detection_ctpn\weights\weights-ctpnlstm-08-0_0585.hdf5
+
+
+## 訓練(從頭開始)
+python ctpn_train.py --anno_dir C:\Users\ctlab\Desktop\CTPN_TF210\VOCdevkit\VOC2007\Annotations --images_dir   C:\Users\ctlab\Desktop\CTPN_TF210\VOCdevkit\VOC2007\JPEGImages  --epochs 11
+
+
+## 恢復訓練 (指定權重檔)
+python ctpn_train.py --anno_dir C:\Users\ctlab\Desktop\CTPN_TF210\VOCdevkit\VOC2007\Annotations --images_dir   C:\Users\ctlab\Desktop\CTPN_TF210\VOCdevkit\VOC2007\JPEGImages --weights_file_path C:\Users\ctlab\Desktop\ZDT_OCR_model_training\ZDT_Ctpn_text_detection\text-detection-ocr\dlocr\weights\weights-ctpnlstm-01.hdf5 --epochs 11
