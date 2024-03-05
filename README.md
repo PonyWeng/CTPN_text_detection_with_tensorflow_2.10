@@ -9,6 +9,7 @@
 ## Usages
 
 ### Prediction
+* 預測 <br>
 `python ctpn_predict.py --image_path {Your Path}\test.png 
 --output_file_path {Your Path}\output.png 
 --weights_file_path {Your Path}\CTPN_TF210\text_detection_ctpn\weights\weights-ctpnlstm-01.hdf5`
